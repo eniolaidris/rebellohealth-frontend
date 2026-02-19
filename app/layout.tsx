@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black text-white min-h-screen">
+      <body style={{ backgroundColor: "black", color: "white" }}>
         {children}
       </body>
     </html>

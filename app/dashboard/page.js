@@ -80,7 +80,7 @@ const handleLogout = () => {
 </button>
 
       {/* Booking Form */}
-      <form onSubmit={handleBooking} className="bg-gray-100 p-6 rounded mb-8">
+      <form onSubmit={handleBooking} className="bg-gray-500 p-6 rounded mb-8">
         <h2 className="text-xl font-semibold mb-4">Book Appointment</h2>
 
         <input

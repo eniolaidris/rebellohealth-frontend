@@ -11,7 +11,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://rebellohealth-backend.onrender.com/api/auth/login", {
+    const res = await fetch("http://localhost:5050/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -30,8 +30,8 @@ export default function Login() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <form onSubmit={handleLogin} className="bg-white p-8 rounded shadow-md w-96">
+    <div className="flex min-h-screen items-center justify-center bg-gray-900">
+      <form onSubmit={handleLogin} className="bg-black p-8 rounded shadow-md w-96">
         <h2 className="text-2xl font-bold mb-4">Login</h2>
 
         <input
@@ -57,4 +57,3 @@ export default function Login() {
     </div>
   );
 }
-
