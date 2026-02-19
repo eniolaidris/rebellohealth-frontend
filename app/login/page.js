@@ -11,7 +11,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5050/api/auth/login", {
+    const res = await fetch("https://rebellohealth-backend.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -34,14 +34,14 @@ export default function Login() {
       className="min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: "url('/img1.JPG')" }}
     >
-      <div className="bg-black/60 backdrop-blur-sm p-8 rounded-lg shadow-lg w-96">
+      <div className="bg-black/70 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-96 border border-white/10">
         <form onSubmit={handleLogin}>
           <h2 className="text-2xl font-bold mb-4 text-white">Login</h2>
   
           <input
             type="email"
             placeholder="Email"
-            className="w-full p-2 mb-3 text-black rounded"
+            className="w-full p-2 mb-3 text-blue rounded"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -49,7 +49,7 @@ export default function Login() {
           <input
             type="password"
             placeholder="Password"
-            className="w-full p-2 mb-4 text-black rounded"
+            className="w-full p-2 mb-4 text-blue rounded"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
