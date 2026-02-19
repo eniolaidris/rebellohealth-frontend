@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       {/* Topbar */}
-      <div className="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
+      <div className="container-fluid bg-secondary ps-5 pe-0">
         <div className="row gx-0">
           <div className="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
             <div className="d-inline-flex align-items-center">
@@ -16,10 +16,10 @@ export default function Home() {
           <div className="col-md-6 text-center text-lg-end">
             <div className="position-relative d-inline-flex align-items-center bg-primary text-white px-5">
               <div className="me-3 pe-3 border-end py-2">
-                <p className="m-0"><i className="fa fa-envelope-open me-2"></i>info@rebellohealth.co.uk</p>
+                <p className="m-0"><i className="fa fa-envelope-open me-2"></i>rebecca@rebellohealth.co.uk</p>
               </div>
               <div className="py-2">
-                <p className="m-0"><i className="fa fa-phone-alt me-2"></i>+44 000 000 000</p>
+                <p className="m-0"><i className="fa fa-phone-alt me-2"></i>01633 329056</p>
               </div>
             </div>
           </div>
@@ -58,11 +58,12 @@ export default function Home() {
         <div className="row">
           <div className="col-lg-6">
             <h1 className="display-5 mb-4">
-              Welcome To <span className="text-primary">REBELLO</span>
+              Welcome To <span className="text-primary">REBELLO HEALTH</span>
             </h1>
             <p>
               We provide professional healthcare consultancy,
-              accounting services and quantity surveying expertise.
+              accounting services and quantity surveying expertise. We value professionalism,
+              integrity and client-focused services, building ;asting partnership based on trust, accuracy and results.
             </p>
             <a href="/login" className="btn btn-primary rounded-pill">
               Get Started
